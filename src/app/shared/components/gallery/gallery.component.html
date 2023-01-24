@@ -1,7 +1,10 @@
 <div class="animetors">
 <figure *ngFor="let item of list">
-  <img  src="{{item.attributes.posterImage.original}}" alt="{{item.attributes.canonicalTitle}}">
-  <!-- <figcaption>{{item.attributes.canonicalTitle}}</figcaption> -->
+  <div class="names">
+    <img class="imagenAnime" src="{{item.attributes.posterImage.original}}" alt="{{item.attributes.canonicalTitle}}">
+    <!-- <figcaption>{{item.attributes.canonicalTitle}}</figcaption> -->
+    <div class="title">{{item.attributes.canonicalTitle}}</div>
+  </div>
 </figure>
 </div>
 

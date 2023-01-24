@@ -1,1 +1,8 @@
-<p>animes-page works!</p>
+
+<div class="allanimes">
+    <div class="serachanimes">
+        <input type="text" [(ngModel)]="searchText">
+        <button (click)="search(searchText)">Buscar</button>
+    </div>
+    <app-gallery [list]="animes"></app-gallery>
+</div>
